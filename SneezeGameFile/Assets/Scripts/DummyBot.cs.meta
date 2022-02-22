@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dfd9cd42493e433468df53fc2ed70bd3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - healthyMaterial: {fileID: 2100000, guid: 0b7f4acc25590ab44948e1f0e24258ab, type: 2}
+  - infectiousMaterial: {fileID: 2100000, guid: c96f39d7c4056f74a8c75dd76dd805bb, type: 2}
+  - recoveredMaterial: {fileID: 2100000, guid: 9df4debaf5c06e2409a094e25c5afaf0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
