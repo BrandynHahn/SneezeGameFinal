@@ -1,9 +1,3 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-# Declare files that will always have CRLF line endings on checkout.
-*.c text eol=crlf
-*.h text eol=crlf
-*.inc text eol=crlf
-*.ini text eol=crlf
-*.asm text eol=crlf
+* text eol=lf
