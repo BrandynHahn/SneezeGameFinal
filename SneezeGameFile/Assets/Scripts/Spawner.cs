@@ -4,27 +4,40 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public int numberToSpawn;
-    public List<GameObject> spawnPool;
-    public GameObject screenbounds;
+    //Adding adult character prefab
     public GameObject AdultPrefab;
+
+    //Adding child character prefab
     public GameObject ChildPrefab;
+
+    //Adding old character prefab
     public GameObject OldPrefab;
 
-    // Start is called before the first frame update
+    public int spawnSpacing; 
+
     void Start()
     {
-        GameObject Adult = Instantiate(AdultPrefab) as GameObject;
-        GameObject Old = Instantiate(OldPrefab) as GameObject;
-        GameObject Child = Instantiate(ChildPrefab) as GameObject;
+        //Random x location for prefabs spawned
+        //var randomX = Random.Range(-8, 8);
+
+        //Random y location for prefabs spawned
+        //var randomY = Random.Range(-4, 4);
+        spawnSpacing = Random.Range(1, 3);
+
+        for (int i=0; i< Random.Range(7, 12); i++)
+        {
+            Vector2 pos = new Vector2(Random.Range(-8, 8), Random.Range(-4, 4));
+            GameObject Adult = Instantiate(AdultPrefab) as GameObject;
+            GameObject Old = Instantiate(OldPrefab) as GameObject;
+            GameObject Child = Instantiate(ChildPrefab) as GameObject;
+
+            //Vector2 pos = Vector2.zero; 
+            //pos.x = randomX;
+            //pos.y = randomY; 
+        }
+
     }
 
-    public void spawnObject()
-    {
-        Random.Range(5, 9);
-    }
-
-    // Update is called once per frame
     void Update()
     {
         
