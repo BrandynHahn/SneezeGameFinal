@@ -9,18 +9,19 @@ public class PlayerSneezeHit : MonoBehaviour
     //The space in between the sneeze and player
     public int sneezeSpace;
 
-    public GameObject Player;
+    //public GameObject Player;
 
-    private Vector3 savedPosition;
+    //private Vector3 savedPosition;
     
-    public float newPosition; 
+    //public float newPosition; 
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        sneezeSpace = 1; 
         //savedPosition = Player.transform.position;
         //newPosition = savedPosition + sneezeSpace;
     }
@@ -37,7 +38,7 @@ public class PlayerSneezeHit : MonoBehaviour
 
             //SneezeSplatterPrefab.tranform.position = newPosition;
 
-            Instantiate(SneezeSplatterPrefab, transform.position + (transform.forward *2), transform.rotation);
+            Instantiate(SneezeSplatterPrefab, transform.position + (transform.forward), transform.rotation);
 
         }
     }
