@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5301529335695648558}
   - component: {fileID: 5301529335695648560}
   - component: {fileID: -1562979791482675914}
+  - component: {fileID: 3501556812361173202}
   - component: {fileID: 5301529335695648563}
   m_Layer: 0
   m_Name: Child
@@ -121,6 +122,19 @@ MonoBehaviour:
   isWalking: 0
   walkTime: 0
   waitTime: 0
+--- !u!114 &3501556812361173202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5301529335695648559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c069c97f1d1cfc147b7a6cc5a93c12fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenBounds: {x: 0, y: 0}
 --- !u!50 &5301529335695648563
 Rigidbody2D:
   serializedVersion: 4

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8809334377564797041}
   - component: {fileID: 8809334377564797040}
   - component: {fileID: 6825520864405973984}
+  - component: {fileID: 6989475202224633435}
   - component: {fileID: 8809334377564797042}
   m_Layer: 0
   m_Name: Adult
@@ -121,6 +122,19 @@ MonoBehaviour:
   isWalking: 0
   walkTime: 0
   waitTime: 0
+--- !u!114 &6989475202224633435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8809334377564797037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c069c97f1d1cfc147b7a6cc5a93c12fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenBounds: {x: 0, y: 0}
 --- !u!50 &8809334377564797042
 Rigidbody2D:
   serializedVersion: 4
