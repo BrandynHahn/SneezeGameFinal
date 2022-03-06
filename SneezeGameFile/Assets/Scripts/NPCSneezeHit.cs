@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPCSneezeHit : MonoBehaviour
 {
+    public float infectionTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,10 @@ public class NPCSneezeHit : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            WaitForSeconds wait = new WaitForSeconds(infectionTime);
             GetComponent<NPCMovement>().enabled = false; 
         }
     }
+
+     
 }

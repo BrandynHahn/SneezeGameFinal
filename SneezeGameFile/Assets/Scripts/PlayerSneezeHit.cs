@@ -18,8 +18,7 @@ public class PlayerSneezeHit : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(SneezeSplatterPrefab, transform.position, transform.rotation);
-            SneezeSplatterPrefab.GetComponent<CircleCollider2D>().enabled = false; 
+            
         }
     }
 
