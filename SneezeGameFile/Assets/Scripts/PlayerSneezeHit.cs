@@ -21,6 +21,8 @@ public class PlayerSneezeHit : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = transform.forward;
 
+            GameObject sneeze = Instantiate(SneezeSplatterPrefab) as GameObject; 
+
         }
     }
 
