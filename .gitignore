@@ -73,3 +73,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+SneezeGameFile/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll
+SneezeGameFile/Library/ScriptAssemblies/UnityEngine.UI.dll
