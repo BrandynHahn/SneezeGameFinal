@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerSneezeHit : MonoBehaviour
 {
+    public GameObject SneezeSplatterPrefab;
+    public float SneezeRange; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +18,14 @@ public class PlayerSneezeHit : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+            Instantiate(SneezeSplatterPrefab, transform.position, transform.rotation);
+            SneezeSplatterPrefab.GetComponent<CircleCollider2D>().enabled = false; 
         }
     }
+
+
+
+
+
+
 }

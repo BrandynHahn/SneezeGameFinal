@@ -41,8 +41,5 @@ public class Spawner : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        
-    }
+    void Update() => transform.Translate(new Vector2(0, 0) * Time.deltaTime);
 }
