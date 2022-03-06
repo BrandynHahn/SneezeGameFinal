@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 607508660833421954}
   - component: {fileID: 607508660833421953}
   - component: {fileID: 607508660833421955}
+  - component: {fileID: -6620701668552057953}
   - component: {fileID: 607508660833421956}
-  - component: {fileID: 607508660833421957}
   m_Layer: 0
   m_Name: Old
   m_TagString: NPC
@@ -103,6 +103,24 @@ MonoBehaviour:
   isWalking: 0
   walkTime: 4
   waitTime: 10
+--- !u!114 &-6620701668552057953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607508660833421952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5050f2fe83198440b091426e2196fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  chanceDirections: 0.01
+  edge: 10
+  isWalking: 0
+  walkTime: 0
+  waitTime: 0
 --- !u!50 &607508660833421956
 Rigidbody2D:
   serializedVersion: 4
@@ -124,16 +142,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &607508660833421957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607508660833421952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4690b43df4173049a43a275fc33d462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screenBounds: {x: 0, y: 0}
