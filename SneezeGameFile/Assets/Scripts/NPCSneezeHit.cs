@@ -14,12 +14,18 @@ public class NPCSneezeHit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            WaitForSeconds wait = new WaitForSeconds(infectionTime);
-            GetComponent<NPCMovement>().enabled = false; 
-        }
+
     }
 
-     
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "SneezeSplatter")
+        {
+            transform.gameObject.tag = "Infected";
+
+        }
+
+    }
+
+
 }
