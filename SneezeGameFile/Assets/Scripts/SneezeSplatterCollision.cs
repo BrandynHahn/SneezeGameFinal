@@ -5,9 +5,12 @@ using UnityEngine;
 public class SneezeSplatterCollision : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        
+        yield return new WaitForSeconds(.2f);
+        (gameObject.GetComponent(typeof(Collider)) as Collider).isTrigger = true;
+
+
     }
 
     // Update is called once per frame
@@ -16,12 +19,4 @@ public class SneezeSplatterCollision : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "NPC")
-        {
-
-        }
-
-    }
 }
