@@ -30,8 +30,7 @@ public class NPCSneezeHit : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.color = new Color(50, 205, 50);
             yield return new WaitForSeconds(5);
             Instantiate(SneezeSplatterPrefab, transform.position + new Vector3(0, 0 + 2, 0), Quaternion.identity);
-
-            
+            GetComponent(NPCMovementScript).enabled = false;
 
         }
 
