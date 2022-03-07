@@ -13,7 +13,7 @@ public class PlayerSneezeHit : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             Instantiate(SneezeSplatterPrefab, sneezeArea.position, sneezeArea.rotation);
-            GetComponent(PlayerSneezeHitScript).enabled = false;
+            Destroy(GetComponent<PlayerSneezeHit>());
         }
         
     }
