@@ -5,10 +5,9 @@ using UnityEngine;
 public class SneezeSplatterCollision : MonoBehaviour
 {
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
-        yield return new WaitForSeconds(.2f);
-        (gameObject.GetComponent(typeof(Collider)) as Collider).isTrigger = true;
+        (gameObject.GetComponent(typeof(Collider)) as CapsuleCollider).isTrigger = true;
 
 
     }
